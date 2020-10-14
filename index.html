@@ -10,7 +10,7 @@ for the use of sending messages to phone numbers all over the world using betasm
         <meta name="author" content="Nnaemeka Innocent Nwofor">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.css" integrity="sha512-Ef5r/bdKQ7JAmVBbTgivSgg3RM+SLRjwU0cAgySwTSv4+jYcVeDukMp+9lZGWT78T4vCUxgT3g+E8t7uabwRuw==" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/w3-css/4.1.0/w3.css" integrity="sha512-Ef5r/bdKQ7JAmVBbTgivSgg3RM+SLRjwU0cAgySwTSv4+jYcVeDukMp+9lZGWT78T4vCUxgT3g+E8t7uabwRuw==" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="./images/mysms-logo.png" sizes="50x50" type="image/png">
@@ -28,21 +28,15 @@ function googleTranslateElementInit() {
 </script>
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                <!-- Simulate a smartphone / tablet -->
-<div class="mobile-container">
-
-<!-- Top Navigation Menu -->
-<div class="topnav">
-  <a href="#home" class="active">Home</a>
-  <div id="myLinks">
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-  </div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+                <div class="topnav" id="myTopnav">
+                    <a href="#home" class="active">Home</a>
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
                 <div class="w3-left w3-ripple w3-spin w3-circle">
                     <img src="./images/mysms-logo.png" class="w3-circle w3-border w3-border-green" style="width:110px;height:110px;">
                 </div>
@@ -128,10 +122,10 @@ function googleTranslateElementInit() {
             </div>
             
             <script async src="https://static.addtoany.com/menu/page.js"></script>
-        </div>
-        <script>
+            
+            <script>
 function myFunction() {
-  var x = document.getElementById("myLinks");
+  var x = document.getElementById("myTopnav");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -139,5 +133,7 @@ function myFunction() {
   }
 }
 </script>
+
+        </div>
     </body>
 </html>
