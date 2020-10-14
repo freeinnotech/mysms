@@ -28,15 +28,21 @@ function googleTranslateElementInit() {
 </script>
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                <div class="topnav" id="myTopnav">
-                    <a href="#home" class="active">Home</a>
-                    <a href="#news">News</a>
-                    <a href="#contact">Contact</a>
-                    <a href="#about">About</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                      <i class="fa fa-bars"></i>
-                    </a>
-                  </div>
+                <!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="#home" class="active">Home</a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
                 <div class="w3-left w3-ripple w3-spin w3-circle">
                     <img src="./images/mysms-logo.png" class="w3-circle w3-border w3-border-green" style="width:110px;height:110px;">
                 </div>
@@ -125,7 +131,7 @@ function googleTranslateElementInit() {
             
             <script>
 function myFunction() {
-  var x = document.getElementById("myTopnav");
+  var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
