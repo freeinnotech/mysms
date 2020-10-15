@@ -39,7 +39,7 @@
 
 
 /*normal styles here */
-#w3-container {
+#w3-row {
    width:1024px;
 }
 @media only screen and (orientation:portrait){
